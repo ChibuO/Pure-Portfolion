@@ -6,35 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width" , inital-scale="1.0">
     <title>Portfolion</title>
-    <link rel="stylesheet" href="./homeStyles.css">
-    <link rel="stylesheet" href="./AboutPage.css">
-    <link rel="stylesheet" href="./LandingPage.css">
-    <link rel="stylesheet" href="./ProjectsPage.css">
-    <link rel="stylesheet" href="./ShoppingPage.css">
-    <link rel="stylesheet" href="./Suggestions.css">
-    <link rel="stylesheet" href="./NavBar.css">
-    <link rel="stylesheet" href="./Footer.css">
+    <link rel="stylesheet" href="./styles/homeStyles.css">
+    <link rel="stylesheet" href="./styles/ProjectsSection.css">
+    <link rel="stylesheet" href="./styles/ProjectPage.css">
+    <link rel="stylesheet" href="./styles/Suggestions.css">
+    <link rel="stylesheet" href="./styles/NavBar.css">
+    <link rel="stylesheet" href="./styles/Footer.css">
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="header_footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <div class='navbar-wrap'>
+    <!-- <div class='navbar-wrap'>
         <div class='navbar container'>
-            <h3 onClick="">ABOUT</h3>
-            <h3 onClick="">CONTACT</h3>
-            <h3>CHIBU</Link>
+            <h3 onClick=""><a href="./index.html#nav-scroll">ABOUT</a></h3>
+            <h3 onClick=""><a href="#footer-section">CONTACT</a></h3>
+            <h3><a href="./index.html#home-scroll">CHIBU</a></Link>
             </h3>
-            <h3 onClick="">PROJECTS</h3>
+            <h3 onClick=""><a href="./index.html#proj-scroll">PROJECTS</a></h3>
             <h3><a href="https://drive.google.com/file/d/1qmAVEf_EP5jWGvwrgn3Sl64JmU-fyhq5/view?usp=share_link"
                     target="blank">RESUME</a></h3>
         </div>
-    </div>
+    </div> -->
 
     <div class='project-page-outer'>
         <div class='project-page container'>
-            <p id="path"><span class='teal-link'>Home</span> / <span class='teal-link'>Projects</span> /
+            <p id="path"><span class='teal-link'><a href="./index.html#home-scroll">Home</a></span> / <span class='teal-link'><a href="./index.html#proj-scroll">Projects</a></span> /
                 <span id="link-name">{projectData.name}</span></p>
             <div class='project-head'>
                 <div class='image-side'>
@@ -76,7 +74,7 @@
         </div>
     </div>
 
-    <div class='footer-outer'>
+    <!-- <div id="footer-section" class='footer-outer'>
         <div class='footer container'>
             <div class='contact-side'>
                 <h2>Contact!</h2>
@@ -91,15 +89,17 @@
             </div>
             <div class='name-side'>
                 <h2>Chibueze Onyenemezu</h2>
-                <div class='to-top-div' onClick="">
+                <div class='to-top-div' onClick="topFunction()">
                     <i class="fa fa-chevron-up"></i>
                     <h3>Back to Top</h3>
                 </div>
             </div>
         </div>
         <div class='footer-bg'></div>
-    </div>
+    </div> -->
+
     <script src="./project.js"></script>
+    <!-- <script src="./sharedScript.js"></script> -->
 </body>
 
 </html>

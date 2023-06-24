@@ -18,14 +18,21 @@
     padding: 8px 0px 4px 0px;
 }
 
-.teal-link {
+.teal-link a {
     color: var(--color-theme);
+    text-decoration: none;
+    transition: all .1s ease-in;
 }
 
-/* .teal-link:hover {
+.teal-link a:visited {
+    color: var(--color-theme);
+    text-decoration: none;
+}
+
+.teal-link a:hover {
     color: var(--color-theme-dark);
-    cursor: pointer;
-} */
+    text-decoration: none;
+}
 
 .project-head {
     /* border: 3px solid salmon; */
