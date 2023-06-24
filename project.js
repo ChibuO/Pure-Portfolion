@@ -102,13 +102,13 @@ window.onload = function () {
     let name = params.get("name");
     console.log(name);
 
-    fetch("../resources/project_data.json").then(response => {
+    fetch("resources/project_data.json").then(response => {
         return response.json();
     }).then(data => {
         projectData = data[name];
         console.log(projectData);
 
-        fetch("../resources/project_images.json").then(response => {
+        fetch("resources/project_images.json").then(response => {
             return response.json();
         }).then(data => {
             projectMedia = data[name];
