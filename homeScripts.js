@@ -35,7 +35,7 @@ function createProjectSquare(page, image) {
 }
 
 window.onload = function () {
-    fetch("../resources/project_images.json").then(response => {
+    fetch("resources/project_images.json").then(response => {
         return response.json();
     }).then(projectMedia => {
         pages.forEach((page) => {
