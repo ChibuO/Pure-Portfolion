@@ -41,7 +41,7 @@ f_template.innerHTML = `
 </div>
 `
 
-if(window.location.pathname.includes("index")) {
+if(!window.location.pathname.includes("project")) {
     document.getElementById('about-scroll').insertAdjacentHTML('beforebegin', h_template_innerHTML);
 } else {
     document.body.insertAdjacentHTML('afterbegin', h_template_innerHTML);
