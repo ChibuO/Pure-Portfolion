@@ -1,0 +1,64 @@
+
+{
+  "elf-bot": {
+    "name": "Elf-Bot",
+    "subtitle": "Santa's Behavior Monitor",
+    "tagline": "A robot that follows you around.",
+    "repo": "https://github.com/ChibuO/Elf-Bot",
+    "details": [
+      "Written in C on a Micro:Bit",
+      "Uses a Grid-EYE infrared sensor for tracking",
+      "Uses an Ultrasonic Distance Sensor for barrier detection"
+    ],
+    "description": [
+      "This was the final project for my Microprocessor System Design course. My partner, Caelan Purnama, and I created this robot to run on the Micro:Bit, the microprocessor that the class was taught around.",
+      "The robot tracks humans through heat so the infrared sensor captures an 8x8 thermopile array of temperature information. If the center columns of the grid have the highest temperatures, the robot moves forward. If the hottest columns are on the left or the right, the robot turns until the center is the hottest again. The ultrasonic distance sensor is used to stop the robot from bumping into its target.",
+      "The project was due in December so it was branded as Elf-Bot to follow the human-monitoring theme."
+    ]
+  },
+  "money_tracker": {
+    "name": "Money Tracker",
+    "subtitle": "Flutter App",
+    "tagline": "Keep track of money spent and received.",
+    "repo": "https://github.com/ChibuO/Money-Tracker-App",
+    "details": [
+      "Created in Android Studio",
+      "Written with Flutter",
+      "Hive Database"
+    ],
+    "description": [
+      "I created this app back in junior high as a way to keep track of the physical cash in my wallet. The first version was made with MIT App Inventor in 2015. When learning Flutter in 2020, I redesigned it and added the option to track multiple sources.",
+      "Flutter is written in Dart and is used to develop cross-platform applications. I use Hive for storing the accounts and their transactions locally on the device."
+    ]
+  },
+  "tv_tracker": {
+    "name": "TV Tracker",
+    "subtitle": "React Website + Django",
+    "tagline": "A website for logging the shows you've watched, where you watched them from, and whether you've finished them. You can also get current information about a show once it's been added.",
+    "repo": "https://github.com/ChibuO/myshows",
+    "details": [
+      "React frontend + Django Backend",
+      "Uses the TVMaze API to fetch show information"
+    ],
+    "description": [
+      "While learning about website backends and databases, I created this website to practice using React to implement a Django backend.",
+      "The user can add a show by giving its title, the streaming platform/channel it was available on, the date they started watching, and whether they've finished. This gets sent to the backend and inserted into the database. Platforms are color coded for easy differentiation on the page. Shows can be edited and deleted at any time. So if the user just watched the series finale, they can mark the show as completed.",
+      "An additional feature is the TVMaze API. If the user double clicks a show, the API fetches its poster, summary, runtime, and rating."
+    ]
+  },
+  "crisis": {
+    "name": "CRISIS",
+    "subtitle": "Assembly Game",
+    "tagline": "Save the multiverse in this DC Comics-inspired Asteroid game!",
+    "repo": "https://github.com/ChibuO/CRISIS-Game",
+    "details": [
+      "Written in IA-32 Assembly",
+      "Uses MASM",
+      "I own none of the images or music"
+    ],
+    "description": [
+      "This game was the created in my Computer Systems Software course for our final project.",
+      "It's loosely based on DC Comic's Crisis on Infinite Earths event where the heroes have to protect some towers and universes collide. However, the avatar is a picture of Galactus's head, who is a character from Marvel Comics. The demon fighting is based on Atari's Asteroids video game."
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+.landing-page {
+    background: var(--color-bg);
+}
+
+.inner-landing {
+    background: url("../images/bg1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center -3vh;
+    margin-bottom: 100px;
+}

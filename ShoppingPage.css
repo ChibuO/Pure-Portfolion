@@ -1,0 +1,178 @@
+.project-page-outer {
+    background: white;
+}
+
+.project-page {
+    background: white;
+    font-family: var(--font-family-product);
+    color: var(--color-spark-gray);
+    font-size: var(--font-p-product);
+    padding: 10px 0px;
+    position: relative;
+    z-index: 1;
+}
+
+#path {
+    font-size: var(--font-p-product);
+    margin: 0px 0px 10px 0px;
+    padding: 8px 0px 4px 0px;
+}
+
+.teal-link {
+    color: var(--color-theme);
+}
+
+/* .teal-link:hover {
+    color: var(--color-theme-dark);
+    cursor: pointer;
+} */
+
+.project-head {
+    /* border: 3px solid salmon; */
+    display: flex;
+}
+
+.project-page h1, h3, ul {
+    margin: 0px;
+}
+
+/*        ---            image side             ---*/
+
+.image-side {
+    flex: 5;
+}
+
+.selected-img-wrap {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: width;
+    padding-top: 100%; /* 1:1 Aspect Ratio */
+    position: relative; /* If you want image inside of it */
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+#selected-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; /* to keep the height the same as the width*/
+    vertical-align: bottom;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#imgs-list {
+    scrollbar-width: none; /* Firefox */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.other-img-wrap {
+    margin: 12px 10px 0px 0px;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+.other-img-wrap-selected {
+    box-shadow: 0 0 0 3.5px var(--color-theme);
+    outline: 2px solid white;
+}
+
+.other-img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    object-position: top;
+    transition: all .2s linear;
+}
+
+.other-img:hover {
+    transform: scale(1.1);
+}
+
+
+/*        ---            sell side             ---*/
+
+.sell-side {
+    flex: 6;
+    /* border: 1px solid coral; */
+    padding-left: 20px;
+}
+
+.sell-side h1 {
+    padding: 0 0 10px 0;
+    font-size: var(--font-h1-product);
+    line-height: 1.1;
+}
+
+.buy-button {
+    background: var(--color-theme);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 100%;
+    margin: 20px 0px;
+    font-size: var(--font-p-product);
+    font-weight: 600;
+}
+
+.buy-button:hover {
+    background: var(--color-theme-dark);
+}
+
+.buy-button:active {
+    box-shadow: 0 0 0 2px var(--color-spark-gray);
+    outline: 1px solid white;
+}
+
+.git-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.info-div {
+    border-top: 2px solid var(--color-spark-gray-dark);
+    line-height: 1.5;
+}
+
+.info-div ul {
+    list-style-type: "- ";
+    padding-left: 10px;
+}
+
+.info-div p, li {
+    color: var(--color-spark-gray-dark);
+}
+
+/*        ---            description            ---*/
+#project-description {
+    line-height: 1.5;
+}
+
+#project-description p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: var(--color-spark-gray-dark);
+    line-height: 1.8;
+}
+
+/*    ----------         suggestions           --------- */
+
+.project-suggestions {
+    margin: 50px 0px;
+}

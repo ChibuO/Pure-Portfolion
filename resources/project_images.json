@@ -1,0 +1,102 @@
+{
+    "elf-bot": [
+        {
+            "path": "images/elfbot/mainbot.jpg",
+            "tag": "The Elf-Bot",
+            "type": "image",
+            "ptitle": "Elf-Bot"
+        },
+        {
+            "path": "images/elfbot/grideyeinfared.jpg",
+            "tag": "The Grid-Eye Infared Array Breakout",
+            "type": "image"
+        },
+        {
+            "path": "images/elfbot/microbit.jpg",
+            "tag": "Micro:Bit v2",
+            "type": "image"
+        },
+        {
+            "path": "images/elfbot/ultrasonic.jpg",
+            "tag": "Ultrasonic Distance Sensor",
+            "type": "image"
+        },
+        {
+            "path": "images/elfbot/elf_bot_gif.gif",
+            "tag": "The Elf-Bot in action",
+            "type": "image"
+        }
+    ],
+
+    "crisis": [
+        {
+            "path": "images/crisis/homescreen.png",
+            "tag": "Game Home Screen",
+            "type": "image",
+            "ptitle": "CRISIS Assembly Game"
+        },
+        {
+            "path": "images/crisis/infoscreen.png",
+            "tag": "Game Instructions",
+            "type": "image"
+        },
+        {
+            "path": "images/crisis/gameplay1.png",
+            "tag": "Search for the tower",
+            "type": "image"
+        },
+        {
+            "path": "images/crisis/tower.png",
+            "tag": "Battle at the tower",
+            "type": "image"
+        },
+        {
+            "path": "images/crisis/gameover.png",
+            "tag": "Game Over Screen",
+            "type": "image"
+        }
+    ],
+
+    "money_tracker": [
+        {
+            "path": "images/moneytracker/homepage.png",
+            "tag": "App Home Screen",
+            "type": "image",
+            "ptitle": "Money Tracker App"
+        },
+        {
+            "path": "images/moneytracker/editaccount.png",
+            "tag": "Editing an Account",
+            "type": "image"
+        },
+        {
+            "path": "images/moneytracker/addtransaction.png",
+            "tag": "Adding a transaction",
+            "type": "image"
+        },
+        {
+            "path": "images/moneytracker/history.png",
+            "tag": "Transaction History",
+            "type": "image"
+        }
+    ],
+
+    "tv_tracker": [
+        {
+            "path": "images/tvtracker/homepage.png",
+            "tag": "App Home Screen",
+            "type": "image",
+            "ptitle": "TV Tracker Site"
+        },
+        {
+            "path": "images/tvtracker/newshow.png",
+            "tag": "Adding a new show",
+            "type": "image"
+        },
+        {
+            "path": "images/tvtracker/selectedshow.png",
+            "tag": "Info about a selected show",
+            "type": "image"
+        }
+    ]
+}

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&family=Red+Rose:wght@300;400&family=Staatliches&family=Varela&display=swap');
+
+:root {
+  --color-theme: #59B2A0;
+  --color-theme-shadow: #59b2a0b8;
+  --color-theme-dark: #3c786c;
+  --color-bg: #202124;
+  --color-spark-gray: #555555;
+  --color-spark-gray-dark: #3C464D;
+  --color-google-gray: #bdc1c6;
+  --color-silver-main: #F2F2F2;
+  --color-silver-main-dark: #b1b1b1;
+  --color-wiki-green-main: #83E6CB;
+  --color-wiki-green-light: #E1F4EF;
+  --center-abs-margin: calc((100vw - 1065px)/2);
+
+  --font-family-main: 'Red Rose', cursive;
+  --font-family-google: 'Cantarell', sans-serif;
+  --font-family-product: 'Varela', sans-serif;
+  --font-family-alt: 'Staatliches', sans-serif;
+
+  --font-p-google: 18px;
+  --font-h3-google: 28px;
+  --font-h4-google: 24px;
+
+  --font-p-product: 18px;
+  --font-h1-product: 34px;
+  --font-button-product: 15px;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+  width: .7em;
+  background: var(--color-bg);
+}
+
+::-webkit-scrollbar-track {
+  margin-block: 0;
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-silver-main);
+  border-radius: 100vw;
+  height: 6em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-silver-main-dark);
+}
+
+/* for firefox */
+@supports (scrollbar-color: var(--color-silver-main) var(--color-silver-main-dark)) {
+  * {
+    scrollbar-color: var(--color-silver-main) rgba(0, 0, 0, 0);
+  }
+}
+
+
+body {
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.app-div {
+  background-color: var(--color-bg);
+}
+
+.home-page {
+  background: var(--color-bg);
+}
+
+.container {
+  --main-width: 1100px;
+  width: var(--main-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.page {
+  max-height: auto;
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 980px) {
+  .container {
+      width: 970px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+      width: 750px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: var(--main-width);
+  }
+}
+

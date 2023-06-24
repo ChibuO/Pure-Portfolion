@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , inital-scale="1.0">
+    <title>Portfolion</title>
+    <link rel="stylesheet" href="./homeStyles.css">
+    <link rel="stylesheet" href="./AboutPage.css">
+    <link rel="stylesheet" href="./LandingPage.css">
+    <link rel="stylesheet" href="./ProjectsPage.css">
+    <link rel="stylesheet" href="./ShoppingPage.css">
+    <link rel="stylesheet" href="./Suggestions.css">
+    <link rel="stylesheet" href="./NavBar.css">
+    <link rel="stylesheet" href="./Footer.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class='navbar-wrap'>
+        <div class='navbar container'>
+            <h3 onClick="">ABOUT</h3>
+            <h3 onClick="">CONTACT</h3>
+            <h3>CHIBU</Link>
+            </h3>
+            <h3 onClick="">PROJECTS</h3>
+            <h3><a href="https://drive.google.com/file/d/1qmAVEf_EP5jWGvwrgn3Sl64JmU-fyhq5/view?usp=share_link"
+                    target="blank">RESUME</a></h3>
+        </div>
+    </div>
+
+    <div class='project-page-outer'>
+        <div class='project-page container'>
+            <p id="path"><span class='teal-link'>Home</span> / <span class='teal-link'>Projects</span> /
+                <span id="link-name">{projectData.name}</span></p>
+            <div class='project-head'>
+                <div class='image-side'>
+                    <figure class='selected-img-wrap'>
+                        <img id='selected-img'></img>
+                    </figure>
+                </div>
+                <div class='sell-side'>
+                    <h1 id="project-title">{`${projectData.name} (${projectData.subtitle})`}</h1>
+                    <a href="" target="blank" id="repo-btn">
+                        <button class='buy-button'>
+                            VISIT THE REPO
+                        </button>
+                    </a>
+                    <!-- {/*<FaGithub class='git-icon' /> */} -->
+                    <div class='info-div'>
+                        <p id="tagline-p">{projectData.tagline}</p>
+                        <h3>Details</h3>
+                        <ul id="detail-ul">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id='imgs-list'>
+            </div>
+            <div id='project-description'>
+                <h3>Description</h3>
+            </div>
+            <div class='project-suggestions'>
+                <hr size="1" color="black" border="1px solid rgb(128, 128, 128)" />
+                <h3>You Might Also Like...</h3>
+                <div class='squares-wrap'>
+
+                </div>
+            </div>
+            <!-- {/* {clickedImage &&
+            <Modal clickedImg={clickedImage} />} */} -->
+
+        </div>
+    </div>
+
+    <div class='footer-outer'>
+        <div class='footer container'>
+            <div class='contact-side'>
+                <h2>Contact!</h2>
+                <div class='icon-line'>
+                    <i class="fa fa-envelope"></i>
+                    <h2><a href="mailto:023813C@gmail.com" target="blank">023813C@gmail.com</a></h2>
+                </div>
+                <div class='icon-line'>
+                    <i class="fa fa-linkedin"></i>
+                    <h2><a href="http://linkedin.com/in/chibueze-i-o-2001" target="blank">LinkedIn</a></h2>
+                </div>
+            </div>
+            <div class='name-side'>
+                <h2>Chibueze Onyenemezu</h2>
+                <div class='to-top-div' onClick="">
+                    <i class="fa fa-chevron-up"></i>
+                    <h3>Back to Top</h3>
+                </div>
+            </div>
+        </div>
+        <div class='footer-bg'></div>
+    </div>
+    <script src="./project.js"></script>
+</body>
+
+</html>

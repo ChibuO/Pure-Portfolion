@@ -1,0 +1,28 @@
+{
+    "solarcar": [
+        {
+            "path": "images/solarcar/car_main.jpg",
+            "tag": "The Solar Car",
+            "type": "image",
+            "ptitle": "NU Solar Car Team"
+        }
+    ],
+
+    "robotics": [
+        {
+            "path": "images/robotics/logo.jpg",
+            "tag": "Robotics Logo",
+            "type": "image",
+            "ptitle": "NU Robotics Club"
+        }
+    ],
+
+    "nunights": [
+        {
+            "path": "images/nunights/sandm.jpg",
+            "tag": "Smocks and Mocks Event Sign",
+            "type": "image",
+            "ptitle": "NU Nights"
+        }
+    ]
+}
