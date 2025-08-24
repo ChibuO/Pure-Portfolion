@@ -39,7 +39,6 @@ window.onload = function () {
         return response.json();
     }).then(projectMedia => {
         pages.forEach((page) => {
-            console.log(projectMedia[page][0]);
             squares_wrap.appendChild(createProjectSquare(page, projectMedia[page][0]));
         })
     });
