@@ -22,11 +22,11 @@ f_template.innerHTML = `
             <h2>Contact!</h2>
             <div class='icon-line'>
                 <i class="fa fa-envelope"></i>
-                <h2><a href="mailto:023813C@gmail.com" target="blank">023813C@gmail.com</a></h2>
+                <p><a href="mailto:023813C@gmail.com" target="blank">023813C@gmail.com</a></p>
             </div>
             <div class='icon-line'>
                 <i class="fa fa-linkedin"></i>
-                <h2><a href="http://linkedin.com/in/chibueze-i-o-2001" target="blank">LinkedIn</a></h2>
+                <p><a href="http://linkedin.com/in/chibueze-i-o-2001" target="blank">LinkedIn</a></p>
             </div>
         </div>
         <div class='name-side'>
@@ -41,11 +41,11 @@ f_template.innerHTML = `
 </div>
 `
 
-if(!window.location.pathname.includes("project")) {
-    document.getElementById('about-scroll').insertAdjacentHTML('beforebegin', h_template_innerHTML);
-} else {
-    document.body.insertAdjacentHTML('afterbegin', h_template_innerHTML);
-}
+// if(!window.location.pathname.includes("project")) {
+document.body.insertAdjacentHTML('beforebegin', h_template_innerHTML);
+// } else {
+//     document.body.insertAdjacentHTML('afterbegin', h_template_innerHTML);
+// }
 document.body.appendChild(f_template.content);
 
 //scroll to top

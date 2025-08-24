@@ -5,98 +5,61 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width" , inital-scale="1.0">
-    <title>Portfolion</title>
-    <link rel="stylesheet" href="./styles/homeStyles.css">
-    <link rel="stylesheet" href="./styles/ProjectsSection.css">
-    <link rel="stylesheet" href="./styles/ProjectPage.css">
-    <link rel="stylesheet" href="./styles/Suggestions.css">
-    <link rel="stylesheet" href="./styles/NavBar.css">
-    <link rel="stylesheet" href="./styles/Footer.css">
+    <title>Projects</title>
+    <link rel="stylesheet" href="./styles/App.css">
+    <link rel="stylesheet" href="./styles/pageStyles/ShoppingPage.css">
+    <link rel="stylesheet" href="./styles/componentStyles/ProjectSquare.css">
+    <link rel="stylesheet" href="./styles/componentStyles/Suggestions.css">
+    <link rel="stylesheet" href="./styles/componentStyles/NavBar.css">
+    <link rel="stylesheet" href="./styles/componentStyles/Footer.css">
     <!-- Load icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="header_footer.js" type="text/javascript" defer></script>
 </head>
 
 <body>
-    <!-- <div class='navbar-wrap'>
-        <div class='navbar container'>
-            <h3 onClick=""><a href="./index.html#nav-scroll">ABOUT</a></h3>
-            <h3 onClick=""><a href="#footer-section">CONTACT</a></h3>
-            <h3><a href="./index.html#home-scroll">CHIBU</a></Link>
-            </h3>
-            <h3 onClick=""><a href="./index.html#proj-scroll">PROJECTS</a></h3>
-            <h3><a href="https://drive.google.com/file/d/1qmAVEf_EP5jWGvwrgn3Sl64JmU-fyhq5/view?usp=share_link"
-                    target="blank">RESUME</a></h3>
-        </div>
-    </div> -->
-
     <div class='project-page-outer'>
-        <div class='project-page container'>
-            <p id="path"><span class='teal-link'><a href="./index.html#home-scroll">Home</a></span> / <span class='teal-link'><a href="./index.html#proj-scroll">Projects</a></span> /
-                <span id="link-name">{projectData.name}</span></p>
+        <div id="shop-page-div" class='project-page container'>
+            <p id="path">
+                <a class='teal-link' href="./index.html#home-scroll">Home</a>
+                 / <a class='teal-link' href="./index.html#proj-scroll">Projects</a>
+                 / <span id="link-name">{projectData.name}</span></p>
             <div class='project-head'>
                 <div class='image-side'>
                     <figure class='selected-img-wrap'>
-                        <img id='selected-img'></img>
+                        <img class='selected-img' id='selected-img-insert'></img>
                     </figure>
                 </div>
                 <div class='sell-side'>
-                    <h1 id="project-title">{`${projectData.name} (${projectData.subtitle})`}</h1>
-                    <a href="" target="blank" id="repo-btn">
+                    <h1 id="project-title-insert">{`${projectData.name} (${projectData.subtitle})`}</h1>
+                    <a href="" target="blank" id="repo-btn-insert">
                         <button class='buy-button'>
                             VISIT THE REPO
                         </button>
                     </a>
                     <!-- {/*<FaGithub class='git-icon' /> */} -->
                     <div class='info-div'>
-                        <p id="tagline-p">{projectData.tagline}</p>
+                        <p id="tagline-p-insert">{projectData.tagline}</p>
                         <h3>Details</h3>
-                        <ul id="detail-ul">
+                        <ul id="detail-ul-insert">
                         </ul>
                     </div>
                 </div>
             </div>
-            <div id='imgs-list'>
+            <div id='thumbnails-list'>
             </div>
             <div id='project-description'>
                 <h3>Description</h3>
             </div>
             <div class='project-suggestions'>
-                <hr size="1" color="black" border="1px solid rgb(128, 128, 128)" />
+                <hr style="height: 1px; background-color: black; border: 1px solid rgb(128, 128, 128);" />
                 <h3>You Might Also Like...</h3>
-                <div class='squares-wrap'>
+                <div class='suggestions-squares-wrap'>
 
                 </div>
             </div>
-            <!-- {/* {clickedImage &&
-            <Modal clickedImg={clickedImage} />} */} -->
-
         </div>
     </div>
-
-    <!-- <div id="footer-section" class='footer-outer'>
-        <div class='footer container'>
-            <div class='contact-side'>
-                <h2>Contact!</h2>
-                <div class='icon-line'>
-                    <i class="fa fa-envelope"></i>
-                    <h2><a href="mailto:023813C@gmail.com" target="blank">023813C@gmail.com</a></h2>
-                </div>
-                <div class='icon-line'>
-                    <i class="fa fa-linkedin"></i>
-                    <h2><a href="http://linkedin.com/in/chibueze-i-o-2001" target="blank">LinkedIn</a></h2>
-                </div>
-            </div>
-            <div class='name-side'>
-                <h2>Chibueze Onyenemezu</h2>
-                <div class='to-top-div' onClick="topFunction()">
-                    <i class="fa fa-chevron-up"></i>
-                    <h3>Back to Top</h3>
-                </div>
-            </div>
-        </div>
-        <div class='footer-bg'></div>
-    </div> -->
 
     <script src="./project.js"></script>
     <!-- <script src="./sharedScript.js"></script> -->

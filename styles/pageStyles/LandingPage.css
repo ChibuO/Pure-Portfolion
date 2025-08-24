@@ -1,0 +1,27 @@
+.landing-page {
+    /* background: var(--color-bg); */
+    /* border: 2px solid blue; */
+}
+
+@media only screen and (width > 800px) {
+    .inner-landing {
+        /* background: red; */
+        background: url("../../images/bg2.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center -3vh;
+        margin-bottom: 100px;
+    }
+}
+
+/* Responsive styling */
+@media only screen and (width <= 800px) {
+    .inner-landing {
+        /* background: blue; */
+        background: url("../../images/bg_half.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center -3vh;
+        /* margin-bottom: 100px; */
+    }
+}

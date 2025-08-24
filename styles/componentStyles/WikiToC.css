@@ -1,0 +1,52 @@
+.toc {
+    background-color: var(--color-softer-white);
+    padding: 20px;
+    font-size: 1rem;
+    position: sticky;
+    top: 150px;
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    z-index: 12;
+}
+
+.toc * {
+    margin: 0;
+    padding: 0;
+}
+
+.toc-title {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin: .75em 0;
+}
+
+.toc hr {
+    background-color: #ddd;
+}
+
+.toc a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* Linkable section headings mimic Wikipedia anchor behavior */
+#wiki-page section[id]::before {
+    display: block;
+    content: " ";
+    margin-top: -60px;
+    height: 60px;
+    visibility: hidden;
+}

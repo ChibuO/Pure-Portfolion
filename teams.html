@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" , inital-scale="1.0">
+    <title>Teams</title>
+    <link rel="stylesheet" href="./styles/App.css">
+    <link rel="stylesheet" href="./styles/pageStyles/WikipediaPage.css">
+    <link rel="stylesheet" href="./styles/componentStyles/WikiInfoBox.css">
+    <link rel="stylesheet" href="./styles/componentStyles/WikiToC.css">
+    <link rel="stylesheet" href="./styles/componentStyles/NavBar.css">
+    <link rel="stylesheet" href="./styles/componentStyles/Footer.css">
+    <!-- Load icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="header_footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <div id="wiki-page-outer" class="project-page-outer">
+        <div id="wiki-page-grid">
+            <!-- table of contents -->
+            <div class="toc">
+                <h4 class="toc-title">Contents</h4>
+                <hr />
+                <ul id='toc-list-insert'>
+                    <li>
+                        <a href='#top'>(Top)</a>
+                    </li>
+
+                    <li id="toc-final-item">
+                        <a href='#other-clubs'>Other Clubs</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- main content -->
+            <div id="wiki-page-title">
+                <h1>Clubs and Organizations</h1>
+                <hr />
+            </div>
+            <div id="wiki-page-div" class="project-page container">
+                <blockquote id="wiki-quote">
+                    <i>
+                        This is an article about the clubs and organizations I was involved in during my time at
+                        Northwestern University. For something else, go <a href="https://www.google.com"
+                            target="blank">here</a>.
+                    </i>
+                </blockquote>
+
+                <div id="wiki-page-body">
+                    <!-- wiki info box-->
+                    <aside class="wiki-info-box">
+                        <div class="wiki-info-box-title">Clubs and Organizations</div>
+                        <img src='images/google/arch.jpg' alt="Northwestern University Arch" class="wiki-info-box-image" />
+                        <div class="wiki-info-box-caption">Northwestern University Arch</div>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>Schedule</th>
+                                    <td>Weekly</td>
+                                </tr>
+                                <tr>
+                                    <th>Roles</th>
+                                    <td>
+                                        Member
+                                        <br />
+                                        VP Finance
+                                        <br />
+                                        Software Lead
+                                        <br />
+                                        President
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Duration</th>
+                                    <td>4.33 years</td>
+                                </tr>
+                                <tr>
+                                    <th>Awards</th>
+                                    <td>2nd Place Micromouse</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </aside>
+                    <!-- sections -->
+                    <section id="opening-description">
+                        <p>
+                            My extracurriculars played a significant role in my personal and
+                            professional development at NU. They were fun, kept me busy, and provided me with
+                            opportunities to
+                            meet new people and develop leadership skills.
+                        </p>
+                    </section>
+
+                    <!-- sections inserted in JS -->
+
+                    <section id="other-clubs">
+                        <h2>Other Clubs</h2>
+                        <hr />
+                        <p>
+                            These are some more clubs I was involved in but to a lesser extent than the above.
+                        </p>
+                        <ul>
+                            <li>Knitwestern - <i>Knitting hats and headbands for those in need</i></li>
+                            <li>Syllabus - <i>Copywriting for the school yearbook</i></li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./teams.js"></script>
+</body>
+
+</html>

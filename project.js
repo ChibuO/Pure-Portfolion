@@ -5,7 +5,7 @@ var projectMedia, projectData, allMedia;
 var selected_img_num = 0;
 
 function updateSelectedImg() {
-    let selected_img = document.getElementById('selected-img');
+    let selected_img = document.getElementById('selected-img-insert');
     selected_img.src = projectMedia[selected_img_num]['path'];
     selected_img.alt= projectMedia[selected_img_num]['tag'];
 
@@ -50,21 +50,26 @@ function createProjectSquare(page, image) {
 }
 
 function addDataIn(name) {
+    // path link
     document.getElementById('link-name').innerHTML = projectData['name'];
-    let selected_img = document.getElementById('selected-img');
+    
+    // main image
+    let selected_img = document.getElementById('selected-img-insert');
     selected_img.src = projectMedia[selected_img_num]['path'];
     selected_img.alt= projectMedia[selected_img_num]['tag'];
 
-    document.getElementById('project-title').innerHTML = `${projectData['name']} (${projectData['subtitle']})`;
-    document.getElementById('repo-btn').href = projectData['repo'];
-    document.getElementById('tagline-p').innerHTML = projectData['tagline'];
+    // main text
+    document.getElementById('project-title-insert').innerHTML = `${projectData['name']} (${projectData['subtitle']})`;
+    document.getElementById('repo-btn-insert').href = projectData['repo'];
+    document.getElementById('tagline-p-insert').innerHTML = projectData['tagline'];
 
     projectData['details'].forEach((detail) => {
         let detail_list_item = document.createElement('li');
         detail_list_item.innerHTML = detail;
-        document.getElementById('detail-ul').appendChild(detail_list_item);
+        document.getElementById('detail-ul-insert').appendChild(detail_list_item);
     });
 
+    // create thumbnails
     projectMedia.forEach((other, index) => {
         let img_thumbnail = document.createElement('figure');
         img_thumbnail.className = "other-img-wrap";
@@ -81,9 +86,10 @@ function addDataIn(name) {
         thumb_img.className = "other-img";
         img_thumbnail.appendChild(thumb_img);
 
-        document.getElementById('imgs-list').appendChild(img_thumbnail);
+        document.getElementById('thumbnails-list').appendChild(img_thumbnail);
     });
 
+    // description paragraphs
     projectData['description'].forEach((paragraph) => {
         let descrip_p = document.createElement('p');
         descrip_p.innerHTML = paragraph;
@@ -91,29 +97,30 @@ function addDataIn(name) {
         document.getElementById('project-description').appendChild(descrip_p);
     });
 
-    var squares_wrap = Array.from(document.getElementsByClassName('squares-wrap'))[0];
+    // suggestion images
+    var suggestions_squares_wrap = Array.from(document.getElementsByClassName('suggestions-squares-wrap'))[0];
     pages.filter(p => p !== name).forEach((page) => {
-        squares_wrap.appendChild(createProjectSquare(page, allMedia[page][0]));
+        suggestions_squares_wrap.appendChild(createProjectSquare(page, allMedia[page][0]));
     });
 }
 
 window.onload = function () {
     var params = new URLSearchParams(window.location.search);
     let name = params.get("name");
-    console.log(name);
+    // console.log(name);
 
     fetch("resources/project_data.json").then(response => {
         return response.json();
     }).then(data => {
         projectData = data[name];
-        console.log(projectData);
+        // console.log(projectData);
 
         fetch("resources/project_images.json").then(response => {
             return response.json();
         }).then(data => {
             projectMedia = data[name];
             allMedia = data;
-            console.log(projectMedia);
+            // console.log(projectMedia);
 
             addDataIn(name);
         });

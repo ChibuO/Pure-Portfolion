@@ -1,0 +1,35 @@
+
+[
+  {
+    "id": "solar-car-team",
+    "name": "Solar Car Team",
+    "duration": "2019 - 2023",
+    "description": [
+      "The Solar Car Team is a student-led organization focused on designing, building, and racing a solar-powered car. I worked on the Software Team, which is responsible for the car's telemetry system. This system collected and transmitted data such as speed, battery levels, and solar panel performance to both the onboard dashboard and a remote dashboard, allowing us to monitor the car's status in real-time.",
+      "After my first year, I became the Software Team lead. My responsibilities included: onboarding new members, creating a new telemetry system, and understanding the previous system (after the disconnect due to COVID). I enjoyed working through frustrations with my team and celebrating progress. Coordinating with the other leads showed me how a big project like this comes together.",
+      "The team works to compete in the Formula Sun Grand Prix, a solar car race in Kansas featuring teams from multiple schools. After years of missing it, we finally went to the race in 2023. I wasn't able to go though."
+    ]
+  },
+  {
+    "id": "nu-nights",
+    "name": "NU Nights",
+    "duration": "2019 - 2023",
+    "description": [
+      "NU Nights is a student org that organizes events and activities for students to enjoy on Friday evenings. The main mission is to provide something fun to do for the weekend that doesn't involve alcohol or other substances.",
+      "Some of my favorite events include: Smocks & Mocks (painting and mocktails), movie theater and musical excursions (ex. Frozen 2 and SIX), Fright Night at Six Flags, and rollerskating. I also liked working with other clubs to host events, such as Open Mic Night with the songwiting club.",
+      "My junior year, I got to learn how club finances work at NU by becoming VP of Finance (the treasurer). I learned how to manage a budget, track expenses, and allocate funds for events. I brought that experience with me to my next role as the club president, which involved steering the club, leading meetings, and communicating with point people."
+    ]
+  },
+  {
+    "id": "robotics-club",
+    "name": "Robotics Club",
+    "duration": "2019 - 2023",
+    "description": [
+      "The Robotics Club is consists of multiple subteams with different goals that all explore robotics through hands-on projects and competitions. I was part of the Micromouse subteam and the Foozball subteam.",
+      "Micromouse is a competition where we build a small robot that can navigate a maze on its own. The goal is to get to the center of the maze as quickly as possible. It was exciting to see the robot improve over time and we ended up winnig silver at the 2022 competition.",
+      "The goal of the Foozball project was to build a robot to play foosball (table soccer) against a human opponent. I worked on the camera system that would track the ball and the players' rods. We never got to finish the project, but I learned a lot about computer vision."
+    ]
+  }
+]
+
+

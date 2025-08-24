@@ -1,0 +1,122 @@
+#wiki-page-outer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+#wiki-page-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: min-content 1fr;
+    /* gap: 10px; */
+    margin: 0 20px;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#wiki-page-title {
+    grid-column: 2;
+    grid-row: 1;
+    font-family: 'Linux Libertine', 'Georgia', serif;
+}
+
+#wiki-page-div {
+    grid-column: 2;
+    grid-row: 2;
+    font-family: 'Linux Libertine', 'Georgia', serif;
+    position: relative;
+}
+
+#wiki-page-div h1 {
+    font-size: 2em;
+    margin: 0;
+    margin-top: 20px;
+}
+
+#wiki-page-div h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+#wiki-page-body {
+    margin: 0px;
+    padding: 0px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section p {
+    margin-bottom: 20px;
+    line-height: 150%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #aaa;
+    margin: 10px 0;
+    padding: 0;
+}
+
+#wiki-quote a {
+    color: var(--color-theme-dark);
+    text-decoration: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wiki-quote a:hover {
+    text-decoration: underline;
+}
+
+#wiki-quote a:visited {
+    color: var(--color-theme-dark);
+}
+
+
+/* Image Box */
+#wiki-image-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.wiki-image-box {
+    width: 300px;
+    font-size: 90%;
+    background: #f8f9fa;
+    border: 1px solid #c8ccd1;
+    padding: 8px;
+}
+
+.wiki-image-box-image {
+    width: 100%;
+    display: block;
+    margin: 0;
+    border: 1px solid #c8ccd1;
+}
+
+.wiki-image-box-caption {
+    font-size: 0.9em;
+    text-align: center;
+    color: #555;
+    margin: 8px 0;
+}
+
+/* Responsive styling */
+@media only screen and (width <= 800px) {
+    #wiki-quote {
+        font-size: .9em;
+    }
+
+    #wiki-page-grid {
+        grid-template-columns: 1fr 2fr;
+    }
+}
