@@ -50,6 +50,9 @@ function createProjectSquare(page, image) {
 }
 
 function addDataIn(name) {
+    // Set the page title based on the project name
+    document.title = `${projectData['name']} | Chibu Portfolio`;
+
     // path link
     document.getElementById('link-name').innerHTML = projectData['name'];
     
